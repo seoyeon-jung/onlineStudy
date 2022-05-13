@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\82109\Desktop\C언어 스터디\Day1\Day1\main.cpp(24,10): warning C4477: 'scanf_s' : 서식 문자열 '%s'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'size_t'입니다.
+C:\Users\82109\Desktop\C언어 스터디\Day1\Day1\main.cpp(24,10): message : 이 인수는 버퍼 크기로 사용됩니다.
+  Day1.vcxproj -> C:\Users\82109\Desktop\C언어 스터디\Day1\x64\Debug\Day1.exe
