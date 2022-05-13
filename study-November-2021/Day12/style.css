@@ -1,0 +1,15 @@
+h1 {
+    color: rgb(180, 180, 255);
+    text-align:center;
+}
+input {
+    background-color: rgb(203, 245, 255);
+    text-align: center;
+    display: inline-block;
+}
+button.search {
+    background-color: skyblue;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+}
