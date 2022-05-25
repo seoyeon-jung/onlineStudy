@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>지난 주 한 학생의 코드 (윤년)</title>
+</head>
+<body>
+    <script>
+        function isLeapYear(value) {
+            // ''로 감싸면 그 부분이 string으로 된다
+            // 만약 불안하다면 ()로 감싸면 된다.
+            if ( (value % 4) === 0 || (value % 400) === 0) {
+                alert(`${value}는 윤년입니다.`);
+            }
+            else if ( (value % 4) !== 0 || (value % 100) === 0) {
+                alert(`${value}는 윤년이 아닙니다.`);
+            }
+        }
+
+        isLeapYear(2022);
+    </script>
+</body>
+</html>

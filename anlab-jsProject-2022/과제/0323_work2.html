@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>0323 과제</title>
+</head>
+
+<body>
+    <script>
+
+        let result = "";
+
+        /* 
+        i 는 마지막 줄부터 반대로 줄어든다.
+        j 는 * 이 들어갈 칸
+        *이 들어가고 나머지 칸들은 빈칸으로 채우기
+        */
+        for (let i = 9; i >= 1; i--) {
+            for (let j = 1; j <= i; j++) {
+                result += "*";
+            }
+            result += "\n";
+        }
+
+        console.log(result);
+
+    </script>
+</body>
+
+</html>

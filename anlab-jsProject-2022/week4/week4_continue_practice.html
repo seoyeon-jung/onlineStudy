@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>continue practice</title>
+    </head>
+    <body>
+        <script>
+
+            // 0부터 10까지 짝수 합 구하기
+            let num = 0;
+
+            for (let i = 0; i <= 10; i++) {
+                if (i % 2 === 1) continue;  // 홀수인 경우 그냥 넘어가기
+
+                console.log(i); // 짝수를 로그에 출력해보기
+                num += i;
+            }
+
+            document.write(num);
+        </script>
+    </body>
+</html>

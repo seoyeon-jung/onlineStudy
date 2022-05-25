@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>num</title>
+</head>
+<body>
+    <script>
+        let a = prompt("첫 번째 수를 입력해주세요.");
+        let b = prompt("두 번째 수를 입력해주세요");
+
+        // 덧셈은 형변환 안하면 제대로 되지 않음 (+는 보통 연결연산자로 사용됨)
+        add = Number(a) + Number(b);
+
+        sub = a - b;
+        mul = a * b;
+        div = a / b;
+        re = a % b;
+
+        document.write(`${add}<br>`);
+        document.write(`${sub}<br>`);
+        document.write(`${mul}<br>`);
+        document.write(`${div}<br>`);
+        document.write(re);
+
+        /* 수업 pdf 코드 ( 형변환 사용 )
+        let num1 = Number(prompt("첫 번째 수를 입력해 주세요."));
+        let num2 = Number(prompt("두 번째 수를 입력해 주세요."));
+
+        document.write(`${num1} + ${num2} = ${num1 + num2} <br>
+        ${num1} - ${num2} = ${num1 - num2} <br>
+        ${num1} * ${num2} = ${num1 * num2} <br>
+        ${num1} / ${num2} = ${num1 / num2} <br>
+        ${num1} % ${num2} = ${num1 % num2} `);
+        */
+    </script>
+</body>
+</html>

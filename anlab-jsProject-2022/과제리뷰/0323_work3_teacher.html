@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>0323 과제3 선생님 답안</title>
+</head>
+
+<body>
+    <script>
+
+        let output = '';
+
+        for (let i = 1; i < 15; i++) {
+            for (let j = 15; j > i; j--) {
+                // output += ' ';
+                output += '&nbsp;';
+            }
+            for (let k = 0; k < (2*i - 1); k++) {
+                output += '*';
+            }
+            // output += '\n';
+            output += '<br>';
+        }
+        
+        // console.log(output);
+        document.write(output);
+    </script>
+</body>
+
+</html>

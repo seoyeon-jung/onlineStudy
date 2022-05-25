@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>현재가 몇 월인지 확인하고 계절을 알려주는 프로그램</title>
+</head>
+<body>
+    <script>
+        const inputMonth = Number(prompt("몇 월인지 입력해주세요", ''));
+
+        if (3 <= inputMonth && inputMonth <= 5) {
+            document.write('봄봄봄 봄이 왔어요~');
+        }
+        else if (6 <= inputMonth && inputMonth <= 8) {
+            document.write('너무 더름 여름이야!');
+        }
+        else if (9 <= inputMonth && inputMonth <= 11) {
+            document.write('낙엽이 떨어지는 가을...');
+        }
+        else {
+            document.write('추운 겨울이 왔습니다');
+        }
+    </script>
+</body>
+</html>

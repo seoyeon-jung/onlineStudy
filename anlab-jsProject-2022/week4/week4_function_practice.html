@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>function practice</title>
+    </head>
+    <body>
+        <script>
+            /* 지역변수와 전역 변수 예시
+            function showMessage() {
+                let message = "안녕하세요";  // 지역 변수
+
+                console.log(message);
+            }
+
+            showMessage();
+            // alert(message);  // ReferenceError: message is not defined
+
+            let userName = 'Chris';  // 전역 변수
+
+            function showMessage2() {
+                let message2 = 'Hello, ' + userName;
+                document.write(message2);
+            }
+
+            showMessage2();
+            */
+
+            /*
+            let userName = 'Chris';
+
+            function showMessage() {
+                userName = 'William';  // 외부 변수를 수정
+
+                let message = 'Hello, ' + userName;
+                document.write(message);
+            }
+
+            alert(userName);  // Chris
+            showMessage(); // Hello, William
+            alert(userName);  // William
+            */
+            
+            /*
+            let userName = 'Chris';
+
+            function showMessage() {
+                let userName = 'William';  // 같은 이름을 가진 지역 변수를 선언
+
+                let message = 'Hello, ' + userName;
+                document.write(message);
+            }
+
+            showMessage(); // Hello, William
+            alert(userName);  // Chris
+            */
+
+            /* 매개변수 넘겨서 함수 호출하기
+            더하기, 빼기, 곱하기, 나누기, 나머지 함수를 만들어 봅시다
+            - 사용자로부터 수를 입력받는다
+            - addNumber() 등의 함수를 구현하고 함수를 호출한다
+            */
+            let num1 = prompt('첫 번째 숫자를 입력하세요');
+            let num2 = prompt('두 번재 숫자를 입력하세요');
+
+            function addNumber() {
+                let add = num1 + num2;
+                document.write(add);
+            }
+
+            function subNumber() {
+                let sub = num1 - num2;
+                document.write(sub);
+            }
+
+            function mulNumber() {
+                let mul = num1 * num2;
+                document.write(mul);
+            }
+
+            function divNumber() {
+                let div = num1 / num2;
+                document.write(div);
+            }
+
+            function reNumber() {
+                let re = num1 % num2;
+                document.write(re);
+            }
+
+            addNumber();
+            subNumber();
+            mulNumber();
+            divNumber();
+            reNumber();
+            
+
+            /* 선생님 코드
+            function addNumber(num1, num2) {
+                document.write('두 수의 합: ' + (num1 + num2));
+            }
+            function subNumber(num1, num2) {
+                document.write('<br>두 수의 차: ' + (num1 - num2));
+            }
+            function multiple(num1, num2) {
+                document.write('<br>두 수의 곱: ' + (num1 * num2));
+            }
+            function divNumber(num1, num2) {
+                document.write('<br>두 수의 나눈값: ' + (num1 / num2));
+            }
+            function reNumber(num1, num2) {
+                document.write('<br>두 수의 나머지: ' + (num1 % num2));
+            }
+
+            const num1 = Number(prompt('첫 번째 숫자 입력'));
+            const num2 = Number(prompt('두 번째 숫자 입력'));
+
+            addNumber(num1, num2);
+            subNumber(num1, num2);
+            multiple(num1, num2);
+            divNumber(num1, num2);
+            reNumber(num1, num2);
+            */
+        </script>
+    </body>
+</html>

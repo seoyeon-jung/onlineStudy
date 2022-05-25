@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>function practice2</title>
+</head>
+
+<body>
+    <script>
+
+        /* 매개변수 예시
+        function showMessage(from, text) {
+            from = '*' + from + '*';
+
+            alert(from +': ' + text);
+        }
+
+        let from = "Chris";
+
+        showMessage(from, "Hello");  // *Chris*: Hello
+        alert(from);  // Chris
+        */
+
+        /* 일반적인 함수와 사용 형태 
+        function sum(a, b) {
+            return a + b;
+        }
+
+        let result = sum(1, 2);
+        document.write(result);
+        */
+
+        /* 예시 
+        function checkAge(age) {
+            if (age >= 18) {
+                return true;
+            }
+            else {
+                return confirm('보호자의 동의를 받으셨나요?');
+            }
+        }
+
+        let age = prompt('나이를 알려주세요', 18);
+
+        if (checkAge(age)) {
+            alert('접속 허용');
+        }
+        else {
+            alert('접속 차단');
+        }
+        */
+
+        /* 미션 - 기본함수 만들기
+        윤년을 확인하는 함수 만들기
+        - 4로 나누어 떨어지는 해는 윤년
+        - 100으로 나누어 떨어지는 해는 윤년이 아니다
+        - 400으로 나누어 떨어지는 해는 윤년
+        */
+
+        function isLeapYear(year) {
+            return (year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0);
+        }
+
+        console.log(`2022년은 윤년일까? === ${isLeapYear(2022)}`);
+        console.log(`2010년은 윤년일까? === ${isLeapYear(2010)}`);
+        console.log(`2000년은 윤년일까? === ${isLeapYear(2000)}`);
+        console.log(`1900년은 윤년일까? === ${isLeapYear(1900)}`);
+    </script>
+</body>
+
+</html>

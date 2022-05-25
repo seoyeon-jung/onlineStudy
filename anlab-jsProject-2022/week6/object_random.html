@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>당첨자 뽑기</title>
+</head>
+<body>
+    
+    <script>
+        
+        let all = prompt('전체 응모자수');
+        let winner = prompt('당첨자 수');
+
+        document.write('전체 응모자 수 : ' + all + "명 <br>");
+        document.write('당첨자: ');
+
+        for (let i = 0; i < winner; i++) {
+            let win = Math.floor((Math.random() * all) + 1);
+            document.write(win, "번, ");
+        }
+        
+    </script>
+
+</body>
+</html>

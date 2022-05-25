@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>클릭 횟수 세는 이벤트 핸들러 예시</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let counter = 0;
+            const h1 = document.querySelector('h1');
+
+            h1.addEventListener('click', (event) => {
+                counter++;
+                h1.textContent = `클릭 횟수: ${counter}`;
+            })
+        });
+    </script>
+
+    <style>
+        h1 {
+            /* 클릭을 여러번 했을 때 글자가 선택되는 것을 막기 위한 스타일 */
+            user-select: none;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1>클릭 횟수: 0</h1>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>data type practice</title>
+</head>
+<body>
+    <script>
+        // 리턴값과 데이터 타입 확인
+        const num = prompt("수를 입력해 주세요:");
+        document.write(num+"<br>");
+        document.write(typeof(num)+"<br>");
+        /* 결과
+        취소 버튼 => null/object
+        그냥 확인 버튼 => "/string
+        문자열 입력 후 확인 => 'abc'/string
+        */
+
+        const num2 = Number(prompt("수를 입력해 주세요:"));
+        document.write(num2+"<br>");
+        document.write(typeof(num2)+"<br>");
+        /* 결과
+        취소 버튼 => 0/number
+        그냥 확인 버튼 => 0/number
+        문자열 입력 후 확인 => NaN/number
+        */
+    </script>
+</body>
+</html>

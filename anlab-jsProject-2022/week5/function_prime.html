@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>소수를 구하는 함수</title>
+</head>
+
+<body>
+    <script>
+
+        /* 내 코드 (10 이하의 소수가 아니라 10만 판별가능)
+        function isPrime(num) {
+
+            let divisor = 2;
+
+            while (num > divisor) {
+                // num이 나누는 수보다 클 때 까지 while문
+
+                if (num % divisor === 0) {
+                    // num과 나누는 수가 나누어 떨어지는 겨우
+                    return false;  // 소수가 아니다
+                }
+                else {
+                    divisor++;
+                    // 나누어 떨이지지 않는다면 나누는 수 1 증가
+                }
+            }
+
+            // while문이 종료되는 경우는 소수이기 때문에 true 리던
+            return true;
+
+        }
+
+        function showPrime() {
+            let num = prompt('숫자를 입력해주세요');
+
+            console.log(isPrime(num));
+        }
+
+        showPrime();
+        */
+
+        /* 선생님 코드
+        function showPrime(n) {
+            for (let i = 2; i < n; i++) {
+                if (!isPrime(i)) continue;
+            }
+
+            console.log(i);  // 소수
+        }
+
+        function isPrime(n) {
+            for (let i = 2; i < n; i++) {
+                if (n % i === 0) return false;
+            }
+
+            return true;
+        }
+        */
+
+        // 다른 학생 코드
+        function isPrime(_num) {
+            let bool_prime = true;
+
+            for (let i = 2; i < _num; i++) {
+                // console.log(_num + " /" + i);
+                if (_num % i === 0) {
+                    bool_prime = false;
+                    // console.log(i + "" + bool_prime);
+                    break;
+                }
+            }
+
+            return bool_prime;
+        }
+
+        function findPrimeNumbers(_num) {
+            let array = [];
+            for (let i = 2; i <= _num; i++) {
+                if (isPrime(i)) array.push(i);
+            }
+
+            return array;
+        }
+
+        /* 다른 학생 코드 2
+        function showPrimes(nn) {
+            let arrs = [];
+            for (let i = 2; i <= nn; i++) {
+                if (isPrime(i)) arrs.push(i);
+            }
+
+            return arrs;
+        }
+
+        function isPrime(nn2) {
+            for (let k = 2; k < nn2; k++) {
+                if (nn2 % k === 0) {
+                    return false;
+                    break;
+                }
+                return true;
+            }
+        }
+
+        const userInput = prompt('숫자를 입력해주세요');
+        let num = Number(userInput);
+
+        if (userInput === '' || userInput === null || isNaN(num)) {
+            document.write('숫자를 입력해주세요');
+        }
+        else {
+            document.write(showPrimes(num));
+        }
+        */
+        
+    </script>
+</body>
+
+</html>

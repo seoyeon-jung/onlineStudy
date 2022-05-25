@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>태어난 연도를 입력받아 띠 출력하는 프로그램</title>
+</head>
+<body>
+    <script>
+        const rawInput = prompt('태어난 해를 입력해주세요.', '');
+        const year = Number(rawInput);
+        const e = year % 12;
+
+        let result = e;
+
+        switch(result)
+        {
+            case 0:
+                result = '원숭이띠';
+                break;
+            case 1:
+                result = '닭띠';
+                break;
+            case 2:
+                result = '개띠';
+                break;
+            case 3:
+                result = '돼지띠';
+                break;
+            case 4:
+                result = '쥐띠';
+                break;
+            case 5:
+                result = '소띠';
+                break;
+            case 6:
+                result = '호랑이띠';
+                break;
+            case 7:
+                result = '토끼띠';
+                break;
+            case 8:
+                result = '용띠';
+                break;
+            case 9:
+                result = '뱀띠';
+                break;
+            case 10:
+                result = '말띠';
+                break;
+            case 11:
+                result = '양띠';
+        }
+
+        alert(`${year}년에 태어났다면 ${result}입니다.`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 구현</title>
+</head>
+<body>
+
+    <!-- 프롬포트 창으로 구현되지 않아서 대신에 페이지에 로그인 창을 만들었습니다.-->
+    ID: <input type="text" placeholder="ID를 입력하세요" id="userid"><br>
+    PW: <input type="password" placeholder="PW를 입력하세요" id="userpw"><br>
+    <input type="button" value="로그인" id="LoginButton">
+
+    <script>
+        /* 프롬포트 창을 띄워서 구현하는데 안되는 점
+        1) 아이디가 틀려도 비밀번호 프롬포트 창으로 넘어간다.
+        2) ESC 키를 누를 시 alert 가 제대로 실행되지 않는다.
+        3) 비밀번호 if 문이 하나도 실행되지 않는다.
+        => 로그인 창을 페이지에 만들고 실행하니까 된다. (이유를 찾아야 할것!)
+
+        let userId = prompt("아이디를 입력해주세요");
+        let userPW = prompt("비밀번호를 입력해주세요");
+        
+        if (userId === "Admin") {
+            if (userPW === "pwd1234") {
+                alert("환영합니다!");
+            }
+            else if (userPW !== "pwd1234") {
+                alert("인증에 실패하였습니다.");
+            }
+            else if (userPW === null || userPW === '') {
+                alert("취소되었습니다.");
+            }
+        }
+        else if (userId === '' || event.keyCode === 27) {
+            alert("취소되었습니다.");
+        }
+        else if (userId !== "Admin") {
+            alert("아이디를 다시 입력해주세요.");
+        }
+        */
+
+        // getElementById : 주어진 문자열과 일치하는 id 속성을 가진 요소를 찾고 이를 나타내는 Element 객체를 반환한다. (html의 id를 가져오기 위한 메서드)
+        // addEventListener : 지정한 유형의 이벤트를 대상이 수신할 때마다 호출할 함수를 설정한다.  (버튼 클릭시 발생하는 이벤트를 나타내려고 사용한 메서드)
+        var LoginButton = document.getElementById("LoginButton");
+        LoginButton.addEventListener('click', loginFunc);
+
+        function loginFunc () {
+            var userid = document.getElementById("userid").value;
+            var userpw = document.getElementById("userpw").value;
+
+            if (userid === "Admin") {
+                if (userpw === "pwd1234") {
+                    alert("환영합니다!");
+                }
+                else if (userpw !== "pwd1234") {
+                    alert("인증에 실패하였습니다.");
+                }
+                else if (userpw === null || userpw === '') {
+                    alert("취소되었습니다.");
+                }
+            }
+            /* ID 칸에 아무것도 입력하지 않아도 '아이디를 다시 입력해주세요'로 돌아온다. (?)
+            else if (userid !== "Admin") {
+                alert("아이디를 다시 입력해주세요.");
+            }
+            */
+            else if (userid === '' || window.event.keyCode === 27) {
+                alert("취소되었습니다.");
+            }
+        }
+    </script>
+</body>
+</html>

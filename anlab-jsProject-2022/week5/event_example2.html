@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DomContentEvent 예시</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // const header = document.querySelector('h1');
+            const header = document.querySelectorAll('h1');
+
+            
+            header.forEach(head => {
+                head.textContent = 'HEADER';
+                head.style.color = 'white';
+                head.style.backgroundColor = 'black';
+                head.style.padding = '10px';
+            })
+            /*
+            header.textContent = 'HEADER';
+            header.style.color = 'white';
+            header.style.backgroundColor = 'black';
+            header.style.padding = '10px';
+            */
+        });
+    </script>
+</head>
+
+<body>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+</body>
+
+</html>

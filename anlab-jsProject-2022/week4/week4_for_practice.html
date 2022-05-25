@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>for in practice</title>
+</head>
+<body>
+    <script>
+        // for in 반복문 (인덱스가 필요한 경우)
+        const todos = ['장보기', '자바스크립트 과제', '업무메일 확인'];
+
+        for (const i in todos) {
+            console.log(`${i}번째 할 일: ${todos[i]}`);
+        }
+        
+        // for of 반복문 (인덱스 대신 그 안의 내용만 필요한 경우)
+        for (const todo of todos) {
+            console.log(`오늘의 할 일: ${todo}`);
+        }
+    </script>
+</body>
+</html>

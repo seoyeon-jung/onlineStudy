@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>exchange</title>
+</head>
+<body>
+    <script>
+
+        // 내 코드
+        let dollar = prompt("달러 단위의 금액을 입력해주세요.");
+        won = dollar * 1207;
+        alert(`달러: ${dollar}\n → 원화: ${won}`);
+
+        /* 다른 분 코드
+        const exchangeRate=1207;
+        let dollar=prompt("달러 단위의 금액을 입력해주세요.");
+        if(Number(dollar))
+            alert(`달러: ${dollar}\n→ 원화: ${dollar*exchangeRate}`);
+        */
+
+        /* 다른 분 코드
+        const a = 1213;
+        let money = prompt("달러 단위의 금액을 입력하세요.");
+        alert(`달러: ${money}\n → 원화: ${money * a}`);
+        */
+
+        /* 수업 pdf 코드
+        // 사용자 입력 받기
+        const rawInput = prompt('달러 단위의 금액을 입력해주세요.');
+        // 형 변환하기
+        const dollar = Number(rawInput);
+        // 출력하기
+        let output = `달러: ${dollar} → 원화: ${dollar * 1200}`;
+        document.write(output);
+        */
+
+
+    </script>
+</body>
+</html>

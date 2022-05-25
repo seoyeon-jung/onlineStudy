@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>태어난 연도를 입력받아 띠 출력하는 프로그램 배열로 하기</title>
+</head>
+<body>
+    <script>
+        const rawInput = prompt('태어난 연도를 입력하세요.');
+        const year = Number(rawInput);
+        const zodiac = ['원숭이', '닭', '개', '돼지', '쥐', '소', '호랑이', '토끼', '용', '뱀', '말', '양'];
+
+        
+        alert(`${year}년에 태어났다면 ${zodiac[year%12]}띠입니다.`);
+        
+    </script>
+</body>
+</html>

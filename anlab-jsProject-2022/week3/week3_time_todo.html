@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>현재 시각에 따라 오늘의 일정을 알려주는 프로그램</title>
+</head>
+<body>
+    <script>
+        const date = new Date();
+        const hour = date.getHours();
+
+        if (hour < 11) {
+            document.write("아침 먹을 시간");
+        }
+        else if (11 <= hour < 15) {
+            document.write("점심 먹을 시간");
+        }
+        else {
+            docuemnt.write("저녁 먹을 시간");
+        }
+    </script>
+</body>
+</html>

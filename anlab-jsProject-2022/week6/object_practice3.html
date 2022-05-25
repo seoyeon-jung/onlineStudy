@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체가 비어있는지 확인해보기</title>
+</head>
+<body>
+    
+    <script>
+        
+        let schedule = {};
+        
+        function isEmpty(obj) {
+            
+            for (let key in obj) {
+                // if the loop has started, there is a property
+                return false;
+            }
+            return true;
+        }
+
+        alert(isEmpty(schedule));  // true
+
+        schedule["8:30"] = "get up";
+
+        alert(isEmpty(schedule));  // false
+        
+    </script>
+
+</body>
+</html>

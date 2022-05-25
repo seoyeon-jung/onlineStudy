@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>0323 과제</title>
+</head>
+
+<body>
+    <script>
+
+        let result = "";
+
+        /* 
+        10줄을 만들 예정이므로 i(=라인)을 두 배 해서 * 찍을 자리 계산해야 한다.
+        j 는 * 을 채우기 전 왼쪽의 공백을 뜻한다.
+        k 는 * 을 채우고 난 후 오른쪽의 공백을 뜻한다.
+        l 은 * 이 들어가는 칸을 뜻한다.
+        */
+        for (let i = 1; i < 10 * 2; i += 2) {
+            for (let j = 1; j < ((10 * 2) - i) / 2; j++) {
+                result += " ";
+            }
+            for (let l = 1; l <= i; l++) {
+                result += "*";
+            }
+            for (let k = 1; k < ((10 * 2) - i) / 2; k++) {
+                result += " ";
+            }
+            result += "\n";
+        }
+        console.log(result);
+
+    </script>
+</body>
+
+</html>

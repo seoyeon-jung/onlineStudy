@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>while practice</title>
+</head>
+<body>
+    <script>
+        /* while문의 가장 기본적인 형태
+        조건이 참인 동안 반복(iteration, 이터레이션) 
+        let i = 0;
+
+        while (i < 5) {
+            console.log(i);
+            i++;
+            // 0 1 2 3 4 가 출력
+        } */
+
+        /* 
+        let i = 3;
+
+        while(i) {
+            console.log(i--);  // 먼저 연산하고 i를 반환한다 -> 마지막 값 1
+            console.log(--i);  // i를 먼저 반환하고 연산한다 -> 마지막 값 0?
+        }
+        */
+
+        /* a, b의 차이점 확인하기
+        let a = 0;
+        while (++a < 5) {
+            // 0이 1로 증가하고 비교 -> console.log(1) 실행
+            // 1이 2로 증가하고 비교 -> console.log(2) 실행
+            // 2가 3으로 증가하고 비교 -> console.log(3) 실행
+            // 3이 4로 증가하고 비교 -> console.log(4) 실행
+            // 4가 5로 증가하고 비교 -> 조건과 다름
+            console.log(a);  // 1 2 3 4
+        }
+
+        let b = 0;
+        while(b++ < 5) {
+            // 0을 5와 비교하고 1로 중가 -> console.log(1) 실행
+            // 1을 먼저 비교하고 2로 증가 -> console.log(2) 실행
+            // 2를 먼저 비교하고 3으로 증가 -> console.log(3) 실행
+            // 3을 민저 비교하고 4로 증가 -> console.log(4) 실행
+            // 4를 먼저 비교하고 5로 증가 -> console.log(5) 실행
+            console.log(b);  // 1 2 3 4 5
+        }
+        */
+
+
+        /* while 반복문 활용
+        사용자가 [확인] 버튼을 클릭하면 반복 계속, [취소] 버튼을 클릭하면 반복 종료 
+        let i = 0;
+        while (confirm('계속 진행하시겠습니까?')) {
+            console.log(`${i}번째 반복입니다.`);
+            i++;
+        }
+        */
+
+
+        /* 반복문의 제어
+        팩토리얼 만들기 - 사용자로부터 숫자를 입력받은 뒤 팩토리얼 계산 */
+        let num = prompt('숫자를 입력해주세요');
+        let x = '';  // 최종으로 나타낼 내용
+
+        if (num !== null) {
+            // 취소 버튼을 누르지 않은 모든 경우
+
+            var result = 1;  // 팩토리얼 결과값
+            var i = 1; 
+
+            while (i <= num) {
+                result *= i;
+                i++
+            }
+            x = num + "! = " + result;
+        }
+        else {
+            x = '취소를 누르셨습니다';
+        }
+
+        document.write(x);
+
+
+        /* 선생님 코드
+        let n = prompt('숫자를 입력하세요.', '10');
+        let msg = "";
+
+        if (n !== null) {  // '취소' 버튼을 누르지 않았는지 체크
+            let nFact = 1;  // 결과 값
+            let i = 1; // 카운터
+
+            while (i <= n) {
+                nFact *= i;
+                i++;
+            }
+            msg = n + "! = " + nFact;  // 결과값을 표시할 문자열
+        }
+        else {
+            msg = "값을 입력하지 않았습니다.";
+        }
+        document.write(msg);  // 결과 표시
+        */
+    </script>
+</body>
+</html>

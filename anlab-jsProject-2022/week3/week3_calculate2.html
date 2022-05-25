@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>num calculate</title>
+</head>
+<body>
+    <script>
+        // 입력된 숫자가 3의 배수인지 판별
+        // 삼항연산자 이용
+        let userNumber = prompt("숫자를 입력하세요");
+        console.log(userNumber);
+
+        if (userNumber !== null){
+            let result = (userNumber % 3 === 0)? document.write("3의 배수입니다.") : document.write("3의 배수가 아닙니다.");
+        }
+        else {
+            alert("입력이 취소되었습니다.");
+        }
+
+    </script>
+</body>
+</html>

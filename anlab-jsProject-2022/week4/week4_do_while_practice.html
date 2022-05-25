@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>do while practice</title>
+</head>
+<body>
+    <script>
+        /* 가장 간단한 do while 예제
+        let i = 0;
+
+        do {
+            alert(i);
+            i++;
+        } while(i < 5);
+        */
+
+        // break를 이용하여 반복문 빠져나오기
+        let i = 0;
+        while (confirm('계속 진행하시겠습니까?')) {
+            i++;
+            break;
+        }
+
+        /* 선생님 코드
+        for (let i = 0; true; i++) {
+            console.log(i + '번째 반복문입니다.');
+
+            const isContinue = confirm('계속 하시겠습니까?');
+            if (!isContinue) {
+                break;
+            }
+        }
+        alert('프로그램 종료!');
+        */
+    </script>
+</body>
+</html>

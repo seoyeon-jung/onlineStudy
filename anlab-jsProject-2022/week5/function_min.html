@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>min(a,b) 함수 만들기</title>
+    </head>
+    <body>
+        <script>
+            function min(a, b) {
+                if (a > b) {
+                    document.write(b);
+                }
+                else if (a < b) {
+                    document.write(a);
+                }
+                else if (a === b) {
+                    document.write(a);
+                }
+            }
+
+            min(2, 5);
+            min(3, -1);
+            min(1, 1);
+
+            /* 예시 코드
+            function min(a, b) {
+                return a < b ? a : b;
+            }
+            */
+        </script>
+    </body>
+</html>
